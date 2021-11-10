@@ -14,8 +14,8 @@ This project contains the 2 extensions created during the conversation on micros
 
 Using the example of a 3D asset pipeline, these extensions illustrate the scalability and reusability of loosely coupled components by:
  1. **Creating a microservice to validate conformity of a USD scene.** This illustrates how a studio may scale and distribute automated tasks, allowing creators to focus on doing what they excel at, and relieve them from manual tasks.
- 1. **Exposing a microservice to convert 3D assets from one format to another.** Independently from the previous microservice, this service can be configured to be as broad or as narrow as necessary to adapt to the needs a studio may have. Separate teams could even reuse and deploy the microservice to serve their unique needs: while artists may need UI integrated into their favorite content creation tools, pipeline developers may also automate the batch import of content shared by partners.
- 2. **Assembling both services together and recording the status of conversion tasks.** By storing the result of conversion tasks in a database, one can imagine evolving this simple pipeline into an automated system exposing a dashboard where artists could monitor the status of their conversions tasks processing in the background, or adding features such as notifications when a task is completed.
+ 2. **Exposing a microservice to convert 3D assets from one format to another.** Independently from the previous microservice, this service can be configured to be as broad or as narrow as necessary to adapt to the needs a studio may have. Separate teams could even reuse and deploy the microservice to serve their unique needs: while artists may need UI integrated into their favorite content creation tools, pipeline developers may also automate the batch import of content shared by partners.
+ 3. **Assembling both services together and recording the status of conversion tasks.** By storing the result of conversion tasks in a database, one can imagine evolving this simple pipeline into an automated system exposing a dashboard where artists could monitor the status of their conversions tasks processing in the background, or adding features such as notifications when a task is completed.
 
 ## Configuration
 
@@ -43,7 +43,7 @@ Once configured, this sample project can be executed by launching an instance of
 
 ### On Windows:
 ```batch
-# Launch Create, with the extension enabled:
+REM Launch Create, with the extension enabled:
 app/omni.create.bat \
     --ext-folder C:\Users\<username>\AppData\Local\ov\pkg\farm-queue-102.1.0\exts-farm-queue \
     --ext-folder ./exts \
