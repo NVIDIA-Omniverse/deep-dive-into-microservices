@@ -1,0 +1,32 @@
+[package]
+version = "1.0.0"
+title = "Asset conversion service"
+description = "A simple demonstration of an asset conversion microservice."
+authors = ["Omniverse Kit Team"]
+preview_image = "data/preview_image.png"
+readme = "docs/README.md"
+changelog = "docs/CHANGELOG.md"
+repository = ""
+category = "Example"
+keywords = ["kit", "service", "asset", "conversion", "example"]
+
+[dependencies]
+"omni.client" = {}
+"omni.kit.asset_converter" = {}
+"omni.kit.pip_archive" = {}
+"omni.services.assets.validate" = {}
+"omni.services.core" = {}
+"omni.services.facilities.database.manager" = {}
+
+# The main Python module this extension provides, it will be publicly available as
+# "import omni.services.assets.convert":
+[[python.module]]
+name = "omni.services.assets.convert"
+
+[settings.exts."omni.services.assets.convert"]
+# URL prefix where the conversion service will be mounted:
+url_prefix = "/assets"
+
+# Database settings, using an SQLite database for demonstration purposes:
+[settings.exts."omni.services.assets.convert".dbs.asset-conversions]
+connection_string = "sqlite:///${data}/asset-conversions.db"
