@@ -69,5 +69,5 @@ Once the application is launched, a conversion task can be submitted to the serv
  * [NVIDIA Omniverse Platform](https://developer.nvidia.com/nvidia-omniverse-platform)
  * [NVIDIA Omniverse Developer Resource Center](https://developer.nvidia.com/nvidia-omniverse-developer-resource-center)
  * *Getting started* documentation:
-   * [NVIDIA Omniverse Microservices](https://docs.omniverse.nvidia.com/farm)
-   * [NVIDIA Omniverse Farm](https://docs.omniverse.nvidia.com/services)
+   * [NVIDIA Omniverse Microservices](https://docs.omniverse.nvidia.com/services)
+   * [NVIDIA Omniverse Farm](https://docs.omniverse.nvidia.com/farm)
