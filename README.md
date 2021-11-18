@@ -1,10 +1,10 @@
 # Companion Code to *A Deep Dive into Building Microservices with Omniverse*
 
-This companion code project contains the resources developed during the *Deep Dive into Building Microservices with Omniverse* session presented during GTC November 2021.
+This companion code project contains the resources developed during the [*Deep Dive into Building Microservices with Omniverse*](https://events.rainfocus.com/widget/nvidia/nvidiagtc/sessioncatalog/session/1629317010811001jRq5) session presented during GTC November 2021.
 
 While there is no better way to learn that to jump in an try writing your own microservice from the sample template for Kit extensions, we also know that having an example to get started can be a valuable resource. Our hope is that these sample extensions, along with the background information of the GTC session, will fast-forward you on your development journey in Omniverse.
 
-![Deep Dive into Building Microservices with Omniverse GTC 2021](./docs/deep-dive-into-microservices-with-omniverse-session-poster.jpg)
+[![Deep Dive into Building Microservices with Omniverse GTC 2021](./docs/deep-dive-into-microservices-with-omniverse-session-poster.jpg)](https://events.rainfocus.com/widget/nvidia/nvidiagtc/sessioncatalog/session/1629317010811001jRq5)
 
 Let us know about what this inspired you to create! [We'd love to hear from you!](https://forums.developer.nvidia.com/c/omniverse/showcase/362)
 
@@ -25,12 +25,12 @@ To get started:
 
 To load this project in *Create* (or any *Omniverse Kit*-based application such as *View*, *Machinima* or *Isaac Sim*), add a link from this repository to the application using the provided `link_app` script:
 
-On Windows:
+**On Windows:**
 ```batch
 link_app.bat C:/Users/<username>/AppData/Local/ov/pkg/create-2021.3.7
 ```
 
-On Linux:
+**On Linux:**
 ```bash
 ./link_app.sh ~/.local/share/ov/pkg/create-2021.3.7
 ```
@@ -41,16 +41,16 @@ If the operation completed successfully, an *./app* folder should appear, linkin
 
 Once configured, this sample project can be executed by launching an instance of Create or any Kit-based application, and submitting a task to the endpoint exposed by the `omni.service.assets.convert` service.
 
-### On Windows:
+**On Windows:**
 ```batch
 REM Launch Create, with the extension enabled:
-app/omni.create.bat \
-    --ext-folder C:\Users\<username>\AppData\Local\ov\pkg\farm-queue-102.1.0\exts-farm-queue \
-    --ext-folder ./exts \
+app/omni.create.bat ^
+    --ext-folder C:\Users\<username>\AppData\Local\ov\pkg\farm-queue-102.1.0\exts-farm-queue ^
+    --ext-folder ./exts ^
     --enable omni.services.assets.convert
 ```
 
-### On Linux:
+**On Linux:**
 ```shell
 # Launch Create, with the extension enabled:
 ./app/omni.create.sh \
@@ -63,3 +63,11 @@ Once the application is launched, a conversion task can be submitted to the serv
  * For *Kit*: http://localhost:8011/docs
  * For *Create*: http://localhost:8111/docs
  * For *Isaac Sim*: http://localhost:8211/docs
+
+## Additional resources
+
+ * [NVIDIA Omniverse Platform](https://developer.nvidia.com/nvidia-omniverse-platform)
+ * [NVIDIA Omniverse Developer Resource Center](https://developer.nvidia.com/nvidia-omniverse-developer-resource-center)
+ * *Getting started* documentation:
+   * [NVIDIA Omniverse Microservices](https://docs.omniverse.nvidia.com/farm)
+   * [NVIDIA Omniverse Farm](https://docs.omniverse.nvidia.com/services)
