@@ -66,6 +66,7 @@ Once the application is launched, a conversion task can be submitted to the serv
 
 ## Additional resources
 
+ * [Presentation slides](https://drive.google.com/file/d/1lThTzjQqnGOgVE6GddwKhsl_f4f1vVsm/view?usp=sharing)
  * [NVIDIA Omniverse Platform](https://developer.nvidia.com/nvidia-omniverse-platform)
  * [NVIDIA Omniverse Developer Resource Center](https://developer.nvidia.com/nvidia-omniverse-developer-resource-center)
  * *Getting started* documentation:
