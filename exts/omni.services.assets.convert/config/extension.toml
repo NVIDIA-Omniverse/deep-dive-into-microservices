@@ -17,6 +17,7 @@ keywords = ["kit", "service", "asset", "conversion", "example"]
 "omni.services.assets.validate" = {}
 "omni.services.core" = {}
 "omni.services.facilities.database.manager" = {}
+"omni.services.client" = {}
 
 # The main Python module this extension provides, it will be publicly available as
 # "import omni.services.assets.convert":
