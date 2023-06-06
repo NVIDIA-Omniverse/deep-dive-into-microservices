@@ -1,10 +1,10 @@
 # Companion Code to *A Deep Dive into Building Microservices with Omniverse*
 
-This companion code project contains the resources developed during the [*Deep Dive into Building Microservices with Omniverse*](https://events.rainfocus.com/widget/nvidia/nvidiagtc/sessioncatalog/session/1629317010811001jRq5) session presented during GTC November 2021.
+This companion code project contains the resources developed during the [*Deep Dive into Building Microservices with Omniverse*](https://nvidia.com/en-us/on-demand/session/gtcfall21-a31204/) session presented during GTC November 2021.
 
 While there is no better way to learn that to jump in an try writing your own microservice from the sample template for Kit extensions, we also know that having an example to get started can be a valuable resource. Our hope is that these sample extensions, along with the background information of the GTC session, will fast-forward you on your development journey in Omniverse.
 
-[![Deep Dive into Building Microservices with Omniverse GTC 2021](./docs/deep-dive-into-microservices-with-omniverse-session-poster.jpg)](https://www.nvidia.com/en-us/on-demand/session/gtcfall21-a31204/)
+[![Deep Dive into Building Microservices with Omniverse GTC 2021](./docs/deep-dive-into-microservices-with-omniverse-session-poster.jpg)](https://nvidia.com/en-us/on-demand/session/gtcfall21-a31204/)
 
 Let us know about what this inspired you to create! [We'd love to hear from you!](https://forums.developer.nvidia.com/c/omniverse/showcase/362)
 
