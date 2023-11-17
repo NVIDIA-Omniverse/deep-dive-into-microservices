@@ -21,18 +21,20 @@ Using the example of a 3D asset pipeline, these extensions illustrate the scalab
 
 To get started:
  1. Download a copy of this repository to your machine.
- 2. From the [Omniverse Launcher](https://www.nvidia.com/en-us/omniverse), download *Create* and *Farm Queue*.
+ 2. From the [Omniverse Launcher](https://www.nvidia.com/en-us/omniverse), download *Farm Queue*.
 
-To load this project in *Create* (or any *Omniverse Kit*-based application such as *View*, *Machinima* or *Isaac Sim*), add a link from this repository to the application using the provided `link_app` script:
+To load this project add a link from this repository to kit using the provided `link_app` script.
+
+You can link to any link-based app, but since you have just installed *Farm Queue* let's link to that:
 
 **On Windows:**
 ```batch
-link_app.bat C:/Users/<username>/AppData/Local/ov/pkg/create-2021.3.7
+link_app.bat C:/Users/<username>/AppData/Local/ov/pkg/farm-queue-<version>
 ```
 
 **On Linux:**
 ```bash
-./link_app.sh ~/.local/share/ov/pkg/create-2021.3.7
+./link_app.sh ~/.local/share/ov/pkg/farm-queue-<version>
 ```
 
 If the operation completed successfully, an *./app* folder should appear, linking the root of this repository to the install location of the Kit-based application from the Omniverse Launcher.
@@ -44,9 +46,9 @@ Once configured, this sample project can be executed by launching an instance of
 **On Windows:**
 ```batch
 REM Launch Create, with the extension enabled:
-app/omni.create.bat ^
-    --ext-folder C:\Users\<username>\AppData\Local\ov\pkg\farm-queue-102.1.0\exts-farm-queue ^
-    --ext-folder ./exts ^
+call %~dp0\app\kit\kit.exe^
+    --ext-folder  %~dp0\app\exts-farm-queue^
+    --ext-folder ./exts^
     --enable omni.services.assets.convert
 ```
 
@@ -60,7 +62,7 @@ app/omni.create.bat ^
 ```
 
 Once the application is launched, a conversion task can be submitted to the service by using the web interface listing all the exposed microservices. This interactive interface is exposed at the following location:
- * For *Kit*: http://localhost:8011/docs
+ * For *Kit*: http://localhost:8222/docs
  * For *Create*: http://localhost:8111/docs
  * For *Isaac Sim*: http://localhost:8211/docs
 
